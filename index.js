@@ -12,7 +12,7 @@ module.exports = {
         var value = config.clientId || config.apiKey;
         var type = config.clientId ? 'client' : 'key';
 
-        return '<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?' + type + '=' + value + '"></script>';
+        return '<script async defer type="text/javascript" src="https://maps.googleapis.com/maps/api/js?' + type + '=' + value + '"></script>';
       }
     }
   }
